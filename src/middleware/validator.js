@@ -22,7 +22,7 @@ const signupCheck = async (req, res, next) => {
     if (!validator.isEmail(email)) throw Error("Email not valid!");
     if (!validator.isStrongPassword(password))
       throw Error(
-        "Password not strong enough! \n consider using uppercase,lowercase,symbol and number"
+        "Password not strong enough! consider using uppercase,lowercase,symbol and number"
       );
 
     next();
