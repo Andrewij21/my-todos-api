@@ -21,7 +21,9 @@ const signupCheck = async (req, res, next) => {
     // IS FIELDS VALID
     if (!validator.isEmail(email)) throw Error("Email not valid!");
     if (!validator.isStrongPassword(password))
-      throw Error("Password not strong enough!");
+      throw Error(
+        "Password not strong enough! consider using uppercase,lowercase,symbol and number"
+      );
 
     next();
   } catch (error) {
