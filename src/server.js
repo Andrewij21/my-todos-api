@@ -9,7 +9,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 // ORIGIN
-const corsOptions = { origin: "http://localhost:3000" };
+const corsOptions = { origin: "https://poetic-halva-a0d5af.netlify.app/" };
 app.use(cors(corsOptions));
 
 // POST json data
