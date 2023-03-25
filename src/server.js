@@ -6,6 +6,11 @@ const helmet = require("helmet");
 const compression = require("compression");
 const routes = require("./routes/index");
 const mongoose = require("mongoose");
+const cors = require("cors");
+
+// ORIGIN
+const corsOptions = { origin: "http://localhost:3000" };
+app.use(cors(corsOptions));
 
 // POST json data
 app.use(express.json());
