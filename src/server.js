@@ -10,7 +10,8 @@ const cors = require("cors");
 
 // ORIGIN
 const corsOptions = {
-  origin: "https://master--poetic-halva-a0d5af.netlify.app",
+  // origin: "https://master--poetic-halva-a0d5af.netlify.app",
+  origin: "https://my-todo-v1-1-1.netlify.app",
 };
 app.use(cors(corsOptions));
 
